@@ -4,56 +4,88 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+
+  /* design */
+  color: #161616;
+  background-color: #f4faff;
 }
 /* –––––––––––– HEADER ––––––––––––  */
 .header {
+  /* position */
   height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
+
+  /* design */
+  background-color: #f4faff;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+  padding: 15px 30px;
 }
 .header__heading {
-
+  color: midnightblue;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
 }
 .header__nav {
+  padding: 20px 30px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
 }
 .header__nav-link {
-
+  /* design */
+  color: midnightblue;
+  text-decoration: none;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 5px 10px;
 }
 
 /* ––––––––– MAIN CONTENT –––––––––  */
 .main {
   padding-top: 60px;
   padding-right: 220px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   position: relative;
 }
 
 /* ––––––––––– ONE POST –––––––––––  */
 .blog {
-
+  /* design */
+  padding-top: 30px;
 }
 .blog__post {
-
+  margin-bottom: 60px;
 }
 .blog__post-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
 
+  /* design */
+  color: #04042b;
 }
 .blog__post-content {
-
+  margin: 0;
 }
 .blog__post-more {
-
+  margin-top: 5px;
 }
 .blog__post-more-link {
 
+  /* design */
+  text-transform: lowercase;
+  color: #0000ad;
 }
 
 /* ––––––––––– ONE POST –––––––––––  */
@@ -71,29 +103,46 @@ body {
 .aside {
   width: 200px;
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 0;
+  bottom: 0;
+
+  /* design */
+  padding: 20px 30px 20px 10px;
 }
 .aside__heading {
-
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .aside__nav {
 
 }
 .aside__nav-link {
+  display: inline-block;
+  margin-bottom: 10px;
 
+  /* design */
+  color: midnightblue;
 }
 
 /* –––––––––––– FOOTER ––––––––––––  */
 .footer {
 
+  /* design */
+  color: #f4faff;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #04042b;
+  padding: 10px 30px;
 }
 .footer__copyright {
-
+  margin: 0;
 }
 .footer__email {
-
+  margin: 10px 0 0;
 }
 .footer__email-link {
 
+  /* design */
+  color: #f4faff;
 }
