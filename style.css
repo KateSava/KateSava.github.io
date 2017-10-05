@@ -1,0 +1,99 @@
+/* –––––––– COMMON STYLES –––––––––  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* –––––––––––– HEADER ––––––––––––  */
+.header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header__heading {
+
+}
+.header__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.header__nav-link {
+
+}
+
+/* ––––––––– MAIN CONTENT –––––––––  */
+.main {
+  padding-top: 60px;
+  padding-right: 220px;
+  position: relative;
+}
+
+/* ––––––––––– ONE POST –––––––––––  */
+.blog {
+
+}
+.blog__post {
+
+}
+.blog__post-heading {
+
+}
+.blog__post-content {
+
+}
+.blog__post-more {
+
+}
+.blog__post-more-link {
+
+}
+
+/* ––––––––––– ONE POST –––––––––––  */
+.post {
+
+}
+.post__primary-heading {
+
+}
+.post__heading {
+
+}
+
+/* –––––––––––– ASIDE –––––––––––––  */
+.aside {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.aside__heading {
+
+}
+.aside__nav {
+
+}
+.aside__nav-link {
+
+}
+
+/* –––––––––––– FOOTER ––––––––––––  */
+.footer {
+
+}
+.footer__copyright {
+
+}
+.footer__email {
+
+}
+.footer__email-link {
+
+}
