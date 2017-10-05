@@ -2,43 +2,75 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- заголовок документа -->
-    <title>Проект номер 1</title>
+    <!-- главный заголовок сайта -->
+    <title>Kate Sava</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- здесь будет тело документа -->
-    <header>
-      <h1>Название страницы</h1>
-      <nav>
-        <a href="index.html">Главная</a>
-        <a href="contacts.html">Контакты</a>
+    <!-- header документа -->
+    <header class="header">
+      <h1 class="header__heading">Kate Sava</h1>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Блог</a>
+        <a href="about.html" class="header__nav-link">Обо мне</a>
+        <a href="contacts.html" class="header__nav-link">Контакты</a>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Название контента</h2>
-        <nav>
-          <a href="#article-1">Первая статья</a>
-          <a href="#article-2">Вторая статья</a>
-        </nav>
+    <!-- основной контент -->
+    <main class="main">
+      <section class="blog">
 
-        <article id="article-1">
-          <h3>Заголовок первой статьи</h3>
-          <a href="https://yandex.ru/referats/?t=psychology&s=60713" target="_blank">Ссылка на реферат</a>
-          <p>Супруги вступают в брак с жизненными паттернами и уровнями дифференциации <i>Я</i>, унаследованными от их родительских семей, таким образом воспитание психологически отталкивает сублимированный код. Инсайт вызывает бихевиоризм. Бессознательное вызывает контраст, следовательно тенденция к конформизму связана с менее низким интеллектом. Роджерс первым ввел в научный обиход понятие <strong>«клиент»</strong>, так как чувство многопланово вызывает тест. Идентификация параллельна. Однако, исследователи постоянно сталкиваются с тем, что страх однородно аннигилирует девиантный эгоцентризм.</p>
+
+        <article id="article-1" class="blog__post">
+          <h3 class="blog__post-heading">Введение в веб-разработку</h3>
+          <p class="blog__post-content">
+            Перед тем как делать что-то, нам нужны идеи. Что наш веб-сайт должен фактически делать? По существу, он может делать все, что угодно, но для нашей первой попытки, мы должны придерживаться простых принципов: мы начнем с создания простой веб-страницы, содержащую заголовок и несколько абзацев.
+          </p>
+          <div class="blog__post-more">
+            <a href="article-1.html" class="blog__post-more-link">Читать дальше</a>
+          </div>
         </article>
 
-        <article id="article-2">
-          <h3>Заголовок второй статьи</h3>
-          <a href="https://www.google.ru" target="_blank">Погугли сам!</a>
-          <a href="https://www.mail.ru" target="_blank">Посмотри на mail.ru</a>
-          <p>Архетип отталкивает аутизм. Самонаблюдение непоследовательно иллюстрирует страх. Роджерс определял терапию как, восприятие притягивает эриксоновский гипноз. Лидерство начинает <b>латентный психоанализ</b>, хотя этот факт нуждается в дальнейшей проверке наблюдением.</p>
-          <p>Чувство, несмотря на внешние воздействия, <em>концептуально осознаёт онтогенез речи</em>. Контраст просветляет архетип. Стресс интегрирует субъект.</p>
+        <article id="article-2" class="blog__post">
+          <h3 class="blog__post-heading">Основы HTML</h3>
+          <p class="blog__post-content">
+            Язык HTML был разработан британским учёным Тимом Бернерсом-Ли приблизительно в 1986—1991 годах в стенах ЦЕРНа в Женеве в Швейцарии. HTML создавался как язык для обмена научной и технической документацией, пригодный для использования людьми, не являющимися специалистами в области вёрстки. HTML успешно справлялся с проблемой сложности SGML путём определения небольшого набора структурных и семантических элементов — дескрипторов. Дескрипторы также часто называют «тегами».
+          </p>
+          <div class="blog__post-more">
+            <a href="article-2.html" class="blog__post-more-link">Читать дальше</a>
+          </div>
         </article>
 
-        <a href="tel:+79250404310">Мой телефон, позвони мне!</a>
+        <article id="article-3" class="blog__post">
+          <h3 class="blog__post-heading">Основы CSS</h3>
+          <p class="blog__post-content">
+            CSS используется создателями веб-страниц для задания цветов, шрифтов, расположения отдельных блоков и других аспектов представления внешнего вида этих веб-страниц. Основной целью разработки CSS являлось разделение описания логической структуры веб-страницы (которое производится с помощью HTML или других языков разметки) от описания внешнего вида этой веб-страницы (которое теперь производится с помощью формального языка CSS).
+          </p>
+          <div class="blog__post-more">
+            <a href="article-2.html" class="blog__post-more-link">Читать дальше</a>
+          </div>
+        </article>
+
+
       </section>
+
+      <!-- боковая навигация -->
+      <aside class="aside">
+        <h2 class="aside__heading">Все статьи:</h2>
+        <nav class="aside__nav">
+          <a href="#article-1" class="aside__nav-link">Введение в веб-разработку</a>
+          <a href="#article-2" class="aside__nav-link">Основы HTML</a>
+          <a href="#article-3" class="aside__nav-link">Основы CSS</a>
+        </nav>
+      </aside>
     </main>
+
+    <!-- подвал -->
+    <footer class="footer">
+      <p class="footer__copyright">© Sava</p>
+      <p class="footer__copyright">All rights reserved</p>
+      <p class="footer__email">E-mail: <a href="mailto:mcs.kate.sava@gmail.com" class="footer__email-link">mcs.kate.sava@gmail.com</a></p>
+    </footer>
   </body>
 </html>
