@@ -138,6 +138,11 @@ body {
 /* –––––––––––– FOOTER ––––––––––––  */
 .footer {
 
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   /* design */
   color: #f4faff;
   font-size: 14px;
@@ -149,7 +154,7 @@ body {
   margin: 0;
 }
 .footer__email {
-  margin: 10px 0 0;
+  margin: 0;
 }
 .footer__email-link {
 
