@@ -59,6 +59,15 @@ body {
   font-size: 20px;
   line-height: 20px;
   margin: 5px 10px;
+  border-bottom: 2px solid transparent;
+
+  /* add transition for hover */
+  transition: border-color .3s ease-out;
+}
+
+/* hover */
+.header__nav-link:hover {
+  border-color: midnightblue;
 }
 
 /* ––––––––– MAIN CONTENT –––––––––  */
@@ -89,13 +98,28 @@ body {
   margin: 0;
 }
 .blog__post-more {
-  margin-top: 5px;
+
 }
 .blog__post-more-link {
+  display: inline-block;
 
   /* design */
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
   text-transform: lowercase;
   color: #0000ad;
+  font-weight: 700;
+  border-bottom: 2px solid #0000ad;
+
+  /* add transition for hover */
+  transition: color .3s ease-out, border-color .3s ease-out;
+}
+
+/* hover */
+.blog__post-more-link:hover {
+  color: #04042b;
+  border-color: transparent;
 }
 
 /* ––––––––––– ONE POST –––––––––––  */
@@ -124,15 +148,25 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.aside__nav {
-
+.aside__nav-item {
+  margin-bottom: 15px;
 }
 .aside__nav-link {
-  display: block;
-  margin-bottom: 10px;
 
   /* design */
+  font-weight: 700;
   color: midnightblue;
+  border-bottom: 2px solid midnightblue;
+  text-decoration: none;
+
+  /* add transition for hover */
+  transition: color .3s ease-out, border-color .3s ease-out;
+}
+
+/* hover */
+.aside__nav-link:hover {
+  color: #04042b;
+  border-color: transparent;
 }
 
 /* –––––––––––– FOOTER ––––––––––––  */
@@ -160,6 +194,16 @@ body {
 
   /* design */
   color: #f4faff;
+  border-bottom: 1px solid #f4faff;
+  text-decoration: none;
+
+  /* add transition for hover */
+  transition: border-color .3s ease-out;
+}
+
+/* hover */
+.footer__email-link:hover {
+  border-color: transparent;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––  */
