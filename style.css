@@ -10,7 +10,7 @@ body {
 
   /* design */
   color: #161616;
-  background-color: #f4faff;
+  background-image: linear-gradient(to bottom, rgba(244,250,255,0) 0%, rgb(162, 213, 255) 100%);
 }
 
 .components-page {
@@ -86,6 +86,9 @@ body {
 }
 .blog__post {
   display: flex;
+  padding: 20px;
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
   margin-bottom: 60px;
 }
 
