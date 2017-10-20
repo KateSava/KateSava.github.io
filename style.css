@@ -116,10 +116,7 @@ body {
 
 /* ––––––––– MAIN CONTENT –––––––––  */
 .main {
-  padding-top: 60px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   position: relative;
 }
 
