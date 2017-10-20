@@ -17,6 +17,43 @@ body {
   padding: 50px 20px 300px;
 }
 
+/* –––––––––––– GRID –––––––––––––  */
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 1fr 200px;
+}
+
+.grid-container .header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-container .main {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-container .aside {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-container .footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
 /* –––––––––––– HEADER ––––––––––––  */
 .header {
   /* position */
@@ -73,7 +110,7 @@ body {
 /* ––––––––– MAIN CONTENT –––––––––  */
 .main {
   padding-top: 60px;
-  padding-right: 220px;
+  padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
   position: relative;
@@ -153,12 +190,7 @@ body {
 
 /* –––––––––––– ASIDE –––––––––––––  */
 .aside {
-  width: 200px;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  bottom: 0;
-
+  
   /* design */
   padding: 20px 30px 20px 10px;
 }
