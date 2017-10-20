@@ -53,6 +53,13 @@ body {
   grid-column-end: 3;
 }
 
+.grid-container .gallery {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 
 /* –––––––––––– HEADER ––––––––––––  */
 .header {
@@ -190,7 +197,7 @@ body {
 
 /* –––––––––––– ASIDE –––––––––––––  */
 .aside {
-  
+
   /* design */
   padding: 20px 30px 20px 10px;
 }
