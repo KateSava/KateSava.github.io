@@ -15,7 +15,11 @@
 
       <!-- header документа -->
       <header class="header">
-        <h1 class="header__heading">Kate Sava</h1>
+        <!-- заголовок обернут в ссылку, чтобы при клике на него всегда можно было вернуться на главную, это очень частый use-case -->
+        <!-- слеш для ссылки — href="/" — возвращает на главную страницу сайта, это специальная запись -->
+        <a href="/">
+          <h1 class="header__heading">Kate Sava</h1>
+        </a>
         <nav class="header__nav">
           <a href="index.html" class="header__nav-link">Blog</a>
           <a href="gallery.html" class="header__nav-link">Gallery</a>
