@@ -81,13 +81,36 @@ body {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
   padding: 15px 30px;
 }
+
+.header__link {
+  display: block;
+  text-decoration: none;
+}
+
 .header__heading {
   color: midnightblue;
   font-family: 'Kaushan Script', cursive;
   font-size: 30px;
   line-height: 30px;
   margin: 0;
+
+  /* for animation */
+  background: linear-gradient(-90deg, #191970 20%, #00f 40%, #00f 60%, #191970 80%);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
 }
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
 .header__nav {
   /*padding: 20px 30px;
   position: absolute;
