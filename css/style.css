@@ -320,7 +320,7 @@ body {
 @media (max-width: 767px) {
   /* –––––––––––– GRID –––––––––––––  */
   .grid-container {
-    grid-template-rows: 60px auto 1fr 60px;
+    grid-template-rows: 60px auto 1fr 80px;
     grid-template-columns: 1fr;
   }
   .grid-container .header {
