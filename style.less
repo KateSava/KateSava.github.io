@@ -283,6 +283,50 @@ body {
       grid-column-end: 4;
     }
   }
+
+  /* Gallery Hover Stuff */
+  &__item {
+    position: relative;
+    overflow: hidden;
+
+    &-content {
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      transition: top .45s ease-out .1s,
+                  opacity .55s ease-out;
+
+      &:after {
+        content: '';
+        background-color: rgba(255,255,255,.55);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &:hover &-content {
+      opacity: 1;
+      top: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* –––––––––––– FOOTER ––––––––––––  */
@@ -320,53 +364,6 @@ body {
   }
 }
 
-
-
-/* –––––––––––––––––––––––––––––––––––––––––  */
-
-/* Gallery Hover Stuff / gallery.html */
-.gallery__item {
-  position: relative;
-  overflow: hidden;
-
-  &-content {
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    transition: top .45s ease-out .1s,
-                opacity .55s ease-out;
-
-    &:after {
-      content: '';
-      background-color: rgba(255,255,255,.55);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-  }
-
-  &:hover &-content {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-.gallery__content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
 
 /* –––––––––––––––––––––––––––––––––––––––––  */
 /*# sourceMappingURL=style.css.map */

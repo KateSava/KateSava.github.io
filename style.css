@@ -186,6 +186,7 @@ body {
 /* –––––––––––– GALLERY –––––––––––  */
 .gallery {
   padding: 100px;
+  /* Gallery Hover Stuff */
 }
 .gallery__wrapper {
   height: 100%;
@@ -239,38 +240,6 @@ body {
   grid-column-start: 2;
   grid-column-end: 4;
 }
-/* –––––––––––– FOOTER ––––––––––––  */
-.footer {
-  /* flexbox */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* design */
-  color: #f4faff;
-  font-size: 14px;
-  line-height: 16px;
-  background-color: #04042b;
-  padding: 10px 30px;
-}
-.footer__copyright {
-  margin: 0;
-}
-.footer__email {
-  margin: 0;
-}
-.footer__email-link {
-  /* design */
-  color: #f4faff;
-  border-bottom: 1px solid #f4faff;
-  text-decoration: none;
-  /* add transition for hover */
-  transition: border-color 0.3s ease-out;
-}
-.footer__email-link:hover {
-  border-color: transparent;
-}
-/* –––––––––––––––––––––––––––––––––––––––––  */
-/* Gallery Hover Stuff / gallery.html */
 .gallery__item {
   position: relative;
   overflow: hidden;
@@ -307,6 +276,36 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
+}
+/* –––––––––––– FOOTER ––––––––––––  */
+.footer {
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* design */
+  color: #f4faff;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #04042b;
+  padding: 10px 30px;
+}
+.footer__copyright {
+  margin: 0;
+}
+.footer__email {
+  margin: 0;
+}
+.footer__email-link {
+  /* design */
+  color: #f4faff;
+  border-bottom: 1px solid #f4faff;
+  text-decoration: none;
+  /* add transition for hover */
+  transition: border-color 0.3s ease-out;
+}
+.footer__email-link:hover {
+  border-color: transparent;
 }
 /* –––––––––––––––––––––––––––––––––––––––––  */
 /*# sourceMappingURL=style.css.map */
