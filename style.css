@@ -87,18 +87,6 @@ body {
   -webkit-text-fill-color: transparent;
   animation: shine 5s linear infinite;
 }
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
-.header__nav {
-  /*padding: 20px 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;*/
-}
 .header__nav-link {
   /* design */
   color: midnightblue;
@@ -111,9 +99,13 @@ body {
   /* add transition for hover */
   transition: border-color 0.3s ease-out;
 }
-/* hover */
 .header__nav-link:hover {
   border-color: midnightblue;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 /* ––––––––– MAIN CONTENT –––––––––  */
 .main {
@@ -165,12 +157,10 @@ body {
   /* add transition for hover */
   transition: color 0.3s ease-out, border-color 0.3s ease-out;
 }
-/* hover */
 .blog__post-more-link:hover {
   color: #04042b;
   border-color: transparent;
 }
-/* ––––––––––– ONE POST –––––––––––  */
 /* –––––––––––– ASIDE –––––––––––––  */
 .aside {
   /* design */
@@ -192,7 +182,6 @@ body {
   /* add transition for hover */
   transition: color 0.3s ease-out, border-color 0.3s ease-out;
 }
-/* hover */
 .aside__nav-link:hover {
   color: #04042b;
   border-color: transparent;
@@ -216,7 +205,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.85);
-  /*margin: 20px;*/
 }
 .gallery__item--1 {
   grid-row: 0.25;
@@ -269,7 +257,6 @@ body {
   /* add transition for hover */
   transition: border-color 0.3s ease-out;
 }
-/* hover */
 .footer__email-link:hover {
   border-color: transparent;
 }
@@ -298,7 +285,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /*align-items: center;*/
   align-content: space-between;
   /* box model */
   height: 400px;
@@ -365,29 +351,25 @@ body {
   background-image: linear-gradient(#9c27b0, black);
   margin: 50px;
 }
-.linear-gradient-1 {
-  width: 200px;
-  height: 200px;
-  background-image: linear-gradient(to top left, blue, black);
-  margin: 50px;
-}
-.linear-gradient-2 {
-  width: 200px;
-  height: 200px;
-  background-image: linear-gradient(90deg, green, black);
-  margin: 50px;
-}
-.linear-gradient-3 {
-  width: 200px;
-  height: 200px;
-  background-image: linear-gradient(yellow, #03a9f4, gray, black);
-  margin: 50px;
-}
+.linear-gradient-1,
+.linear-gradient-2,
+.linear-gradient-3,
 .linear-gradient-4 {
   width: 200px;
   height: 200px;
-  background-image: linear-gradient(orange 10%, #03a9f4 60%, blue 80%, black);
   margin: 50px;
+}
+.linear-gradient-1 {
+  background-image: linear-gradient(to top left, blue, black);
+}
+.linear-gradient-2 {
+  background-image: linear-gradient(90deg, green, black);
+}
+.linear-gradient-3 {
+  background-image: linear-gradient(yellow, #03a9f4, gray, black);
+}
+.linear-gradient-4 {
+  background-image: linear-gradient(orange 10%, #03a9f4 60%, blue 80%, black);
 }
 /* –––––––––––––––––––––––––––––––––––––––––  */
 /* radil-gradient */
@@ -397,17 +379,17 @@ body {
   background-image: radial-gradient(#f4b1ff, black);
   margin: 50px;
 }
-.radial-gradient-1 {
-  width: 400px;
-  height: 200px;
-  background-image: radial-gradient(at left bottom, pink, black);
-  margin: 50px;
-}
+.radial-gradient-1,
 .radial-gradient-2 {
   width: 400px;
   height: 200px;
-  background-image: radial-gradient(circle, #f4b1ff, black);
   margin: 50px;
+}
+.radial-gradient-1 {
+  background-image: radial-gradient(at left bottom, pink, black);
+}
+.radial-gradient-2 {
+  background-image: radial-gradient(circle, #f4b1ff, black);
 }
 .gradient-generator {
   width: 200px;
@@ -445,26 +427,26 @@ body {
   margin-left: -10px;
   margin-right: -10px;
 }
-.calc-child {
-  width: calc(30%);
-  background-color: blue;
-  margin: 0 10px;
-}
 .calc-parent-part {
   display: flex;
   height: 200px;
   border: 1px solid gray;
-}
-.calc-child-part {
-  width: calc(4.28571429%);
-  background-color: green;
-  margin: 0 5px;
 }
 .calc-parent-2 {
   display: flex;
   height: 200px;
   border: 1px solid gray;
   margin: 50px;
+}
+.calc-child {
+  width: calc(30%);
+  background-color: blue;
+  margin: 0 10px;
+}
+.calc-child-part {
+  width: calc(4.28571429%);
+  background-color: green;
+  margin: 0 5px;
 }
 .calc-child-responsive {
   width: calc(30%);
@@ -518,9 +500,8 @@ body {
   margin: 20px 0;
 }
 .pseudo-classes-child {
-  height: 20px;
-  margin: 20px;
-  border: 1px solid gray;
+  /* fisrt & last */
+  /* nth-child */
 }
 .pseudo-classes-child:first-child {
   background-color: blue;
@@ -530,8 +511,6 @@ body {
   background-color: green;
   margin-bottom: 0;
 }
-/* –––––––––––––––––––––––––––––––––––––––––  */
-/* nth-child */
 .pseudo-classes-child:nth-child(2) {
   border-color: red;
 }
@@ -583,6 +562,8 @@ body {
   flex-wrap: wrap;
   margin: 50px;
 }
+/* –––––––––––––––––––––––––––––––––––––––––  */
+/* transform: translate */
 .translate-parent {
   width: 300px;
   height: 200px;
