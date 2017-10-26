@@ -6,8 +6,8 @@
     <!-- главный заголовок сайта -->
     <title>Kate Sava</title>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="flexboxgrid.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -16,10 +16,15 @@
       <!-- header документа -->
       <header class="header">
         <!-- заголовок обернут в ссылку, чтобы при клике на него всегда можно было вернуться на главную, это очень частый use-case -->
-        <!-- слеш для ссылки — href="/" — возвращает на главную страницу сайта, это специальная запись -->
-        <a href="/" class="header__link">
+        <a href="index.html" class="header__link">
           <h1 class="header__heading">Kate Sava</h1>
         </a>
+
+        <!-- мобильное меню: при клике открывается особым образом спрятанный див "header__nav" (см. стили) -->
+        <div class="header__mobile-menu" id="js-mobile-menu">
+          <div class="header__mobile-menu-icon"></div>
+        </div>
+
         <nav class="header__nav">
           <a href="index.html" class="header__nav-link">Blog</a>
           <a href="gallery.html" class="header__nav-link">Gallery</a>
@@ -102,5 +107,6 @@
 
     </div>
 
+    <script src="js/script.js"></script>
   </body>
 </html>
