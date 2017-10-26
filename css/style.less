@@ -97,6 +97,12 @@ body {
   }
 
   &__nav {
+    display: flex;
+
+    &-item {
+      margin: 5px 10px;
+    }
+
     &-link {
       /* design */
       color: midnightblue;
@@ -104,7 +110,6 @@ body {
       font-family: 'Kaushan Script', cursive;
       font-size: 20px;
       line-height: 20px;
-      margin: 5px 10px;
       border-bottom: 2px solid transparent;
       /* add transition for hover */
       transition: border-color .3s ease-out;
@@ -441,7 +446,50 @@ body {
     }
 
     &__nav {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: fixed;
+      top: 60px;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      background-color: rgba(25,25,112,.65);
+      padding-top: 30px;
+      overflow: hidden;
+      transition: width .45s ease-out;
+
+      &:before{
+        content: '';
+        width: 0;
+        background-image: linear-gradient(to bottom, #fff 0%, #a2d5ff 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: width .35s ease-out .1s;
+      }
+
+      &-item {
+        /* LESS криво работает с calc() */
+        /* поэтому требуется экранирование, то есть использование специального синтаксиса */
+        margin-left: e("calc(50vw + 30px)");
+        margin-bottom: 30px;
+      }
+
+      &-link {
+        font-size: 26px;
+        line-height: 34px;
+      }
+    }
+
+    &__mobile-menu.opened + &__nav {
+      width: 100vw;
+
+      &:before {
+        width: 50vw;
+      }
     }
   }
 
