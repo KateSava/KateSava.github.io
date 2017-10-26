@@ -414,6 +414,14 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+  /* –––––––––––– FOOTER ––––––––––––  */
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__section {
+    text-align: center;
+  }
 }
 /* –––––––––––––––––––––––––––––––––––––––––  */
 /*# sourceMappingURL=style.css.map */
