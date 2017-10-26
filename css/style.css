@@ -441,6 +441,15 @@ body {
   .blog {
     padding-top: 0;
   }
+  .blog__post {
+    flex-direction: column;
+  }
+  .blog__post-image {
+    flex-basis: 100%;
+    height: 185px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
   /* –––––––––––– GALLERY –––––––––––  */
   .gallery {
     padding: 30px;
