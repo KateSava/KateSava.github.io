@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="9 0.906040268 5.38795987 4.5 9 8.09395973 8.09698997 9 4.48494983 5.40604027 0.903010033 9 0 8.09395973 3.5819398 4.5 0 0.906040268 0.903010033 0 4.48494983 3.59395973 8.09698997 0"></polygon>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-635.000000, -678.000000)">
+            <g transform="translate(559.000000, 666.000000)">
+                <g id="Group">
+                    <g transform="translate(76.000000, 12.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#333333" xlink:href="#path-1"></use>
+                        <g mask="url(#mask-2)" fill="#333333">
+                            <g transform="translate(-32.000000, -32.000000)">
+                                <rect x="0" y="0" width="72" height="72"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
