@@ -48,7 +48,7 @@ console.log( multiply(2,3,4) );
 
 
 // DOM
-var myArticle = document.getElementById('article-3');
+var myArticle = document.getElementById('components-article');
 myArticle.classList.add('myClass');
 
 
