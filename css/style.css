@@ -445,7 +445,7 @@ body {
     flex-direction: column;
   }
   .blog__post-image {
-    flex-basis: 100%;
+    flex-basis: auto;
     height: 185px;
     margin-right: 0;
     margin-bottom: 20px;
