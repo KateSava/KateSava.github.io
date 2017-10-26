@@ -128,7 +128,7 @@ body {
   position: relative;
 }
 
-/* ––––––––––– ONE POST –––––––––––  */
+/* ––––––––––– BLOG POSTS –––––––––––  */
 .blog {
   /* design */
   padding-top: 30px;
@@ -362,6 +362,77 @@ body {
       }
     }
   }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––  */
+/* ––––––––––––– MEDIA: MOBILE ––––––––––––  */
+/* –––––––––––––––––––––––––––––––––––––––––  */
+@media (max-width: 767px) {
+
+  /* –––––––––––– GRID –––––––––––––  */
+  .grid-container {
+    grid-template-rows: 60px auto 1fr 60px;
+    grid-template-columns: 1fr;
+
+    .header {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .aside {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .main {
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    .footer {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .gallery {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+
+  /* –––––––––––– ASIDE –––––––––––––  */
+  .aside {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    &__heading {
+      white-space: nowrap;
+      margin: 5px 0;
+    }
+
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+
+      &-item {
+        white-space: nowrap;
+        margin: 5px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  /* –––––––––––– BLOG STUFF ––––––––––– */
+  .blog {
+    padding-top: 0;
+  }
+
 }
 
 

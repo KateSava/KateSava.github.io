@@ -109,7 +109,7 @@ body {
   padding: 30px;
   position: relative;
 }
-/* ––––––––––– ONE POST –––––––––––  */
+/* ––––––––––– BLOG POSTS –––––––––––  */
 .blog {
   /* design */
   padding-top: 30px;
@@ -306,6 +306,63 @@ body {
 }
 .footer__email-link:hover {
   border-color: transparent;
+}
+/* –––––––––––––––––––––––––––––––––––––––––  */
+/* ––––––––––––– MEDIA: MOBILE ––––––––––––  */
+/* –––––––––––––––––––––––––––––––––––––––––  */
+@media (max-width: 767px) {
+  /* –––––––––––– GRID –––––––––––––  */
+  .grid-container {
+    grid-template-rows: 60px auto 1fr 60px;
+    grid-template-columns: 1fr;
+  }
+  .grid-container .header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-container .aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-container .main {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .grid-container .footer {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-container .gallery {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  /* –––––––––––– ASIDE –––––––––––––  */
+  .aside {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .aside__heading {
+    white-space: nowrap;
+    margin: 5px 0;
+  }
+  .aside__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .aside__nav-item {
+    white-space: nowrap;
+    margin: 5px;
+  }
+  .aside__nav-item:first-child {
+    margin-left: 0;
+  }
+  /* –––––––––––– BLOG STUFF ––––––––––– */
+  .blog {
+    padding-top: 0;
+  }
 }
 /* –––––––––––––––––––––––––––––––––––––––––  */
 /*# sourceMappingURL=style.css.map */
