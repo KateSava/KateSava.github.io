@@ -10,9 +10,6 @@ body {
   color: #161616;
   background-image: linear-gradient(to bottom, rgba(244, 250, 255, 0) 0%, #a2d5ff 100%);
 }
-.components-page {
-  padding: 50px 20px 300px;
-}
 /* –––––––––––– GRID –––––––––––––  */
 .grid-container {
   display: grid;
